@@ -138,7 +138,6 @@
 		DA7BA40518737DB9001A7138 /* CPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7BA3B118737DB9001A7138 /* CPToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DA7BA40618737DB9001A7138 /* CPWhiteSpaceToken.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7BA3B218737DB9001A7138 /* CPWhiteSpaceToken.h */; };
 		DA7BA40718737DB9001A7138 /* CPWhiteSpaceToken.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7BA3B318737DB9001A7138 /* CPWhiteSpaceToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DA87348A18970AB800113896 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00447B155D94FF0028A012 /* Cocoa.framework */; };
 		DA8734A918970AE600113896 /* FSArgumentPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0214FD3BED0097C754 /* FSArgumentPackage.m */; };
 		DA8734AA18970AEB00113896 /* FSArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0414FD3BED0097C754 /* FSArgumentParser.m */; };
 		DA8734AB18970AEF00113896 /* FSArguments_Coalescer_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044BF155DA7BC0028A012 /* FSArguments_Coalescer_Internal.m */; };
@@ -444,7 +443,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA87348A18970AB800113896 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1339,6 +1337,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1357,6 +1356,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArgumentParser/ArgumentParser-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
 				MACH_O_TYPE = mh_object;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
